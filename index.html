@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <title>Network Site</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <h2>Networking Fundamental</h2>
+    </div>
+
+    <div class="links" id="nav-links">
+      <a href="osi_tcp_ip.html">OSI & TCP/IP</a>
+      <a href="network_simulator.html">Network Simulator</a>
+      <a href="security.html">Security Showcase</a>
+      <a href="quiz.html">Quiz Section</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </nav>
+
+
+  <div class="home">
+    <h1>Master Networking Fundamental Site</h1>
+    <p>Explore the OSI model, TCP/IP protocols, network security, and practice with our interactive tools. Perfect for beginners and professionals alike.</p>
+    
+    <!-- Buttons -->
+    <div class="hero-buttons">
+      <a href="osi_tcp_ip.html" class="btn primary">Get Started</a>
+      <a href="quiz.html" class="btn secondary">Take Quiz</a>
+    </div>
+
+    <!-- Network Flow Cards -->
+    <div class="network-flow">
+      <div class="glass-card bounce">
+        <i class="fas fa-desktop"></i>
+        <p>Client</p>
+      </div>
+
+      <div class="connector"><div class="loading-bar"></div></div>
+
+      <div class="glass-card bounce">
+        <i class="fas fa-wifi"></i>
+        <p>Router</p>
+      </div>
+
+      <div class="connector"><div class="loading-bar"></div></div>
+
+      <div class="glass-card bounce">
+        <i class="fas fa-server"></i>
+        <p>Server</p>
+      </div>
+    </div>
+  </div>
+
+
+
+ <div class="osi-page">
+  <h2>OSI Model & TCP/IP</h2>
+  <p>Understanding network communication through layered models</p>
+
+  <div class="osi-grid">
+    <!-- Left: OSI Layers -->
+    <div class="osi-layers">
+      <div class="layer-card" data-layer="7">
+        <h4>Layer 7 - Application <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Supports end-user processes like HTTP, HTTPS, FTP, SMTP.</p>
+      </div>
+
+      <div class="layer-card" data-layer="6">
+        <h4>Layer 6 - Presentation <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Handles data formatting, encryption, compression, translation.</p>
+      </div>
+
+      <div class="layer-card" data-layer="5">
+        <h4>Layer 5 - Session <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Manages sessions, connections, synchronization between apps.</p>
+      </div>
+
+      <div class="layer-card" data-layer="4">
+        <h4>Layer 4 - Transport <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Provides reliable delivery (TCP/UDP), ports, flow control.</p>
+      </div>
+
+      <div class="layer-card" data-layer="3">
+        <h4>Layer 3 - Network <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Routes packets using IP, ICMP, handles addressing.</p>
+      </div>
+
+      <div class="layer-card" data-layer="2">
+        <h4>Layer 2 - Data Link <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Transfers frames, handles MAC addresses, switches.</p>
+      </div>
+
+      <div class="layer-card" data-layer="1">
+        <h4>Layer 1 - Physical <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></h4>
+        <p class="dropdown">Deals with cables, signals, hubs, raw bit transmission.</p>
+      </div>
+    </div>
+
+    <!-- Right: Network Types + Comparison -->
+    <div class="osi-right">
+      <div class="network-types">
+        <div class="type-card">LAN <span>Small area, high speed, low cost</span></div>
+        <div class="type-card">WAN <span>Large area, lower speed, higher cost</span></div>
+        <div class="type-card">MAN <span>City-wide coverage, medium speed</span></div>
+        <div class="type-card">WLAN <span>Wireless LAN, flexible but less secure</span></div>
+      </div>
+
+      <div class="comparison">
+        <h3>TCP/IP Model vs OSI</h3>
+        <div class="compare-box">
+          <div><strong>TCP/IP</strong><br>Application<br>Transport<br>Internet<br>Network Access</div>
+          <div><strong>OSI Mapping</strong><br>Layers 5–7<br>Layer 4<br>Layer 3<br>Layers 1–2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

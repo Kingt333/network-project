@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #0a3d62;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.logo h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #38ada9;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hero */
+.home {
+  text-align: center;
+  padding: 90px 20px;
+  background: url(/img/backnet.jpg) no-repeat center center/cover;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin: 20px 0 50px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #38ada9;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  background: rgba(20, 40, 60, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56,173,169,0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.glass-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-15px); }
+  60% { transform: translateY(-8px); }
+}
+
+
+.network-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.connector {
+  width: 100px;
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-bar {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, #38ada9, #78e08f);
+  animation: load 1.5s infinite;
+}
+
+@keyframes load {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(200%); }
+}
+
+.osi-page {
+  padding: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+.osi-page h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.osi-page p {
+  color: #727272;
+}
+
+.osi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.osi-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.layer-card {
+  background: rgba(20, 40, 60, 0.32);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: left;
+    color: #222;
+    box-shadow: 0 2px 12px #0001;
+}
+
+  /* OSI Layer Glassy Gradients */
+  .layer-card[data-layer="7"] {
+    background: linear-gradient(135deg, rgba(56,173,169,0.35) 60%, rgba(255,255,255,0.7) 100%);
+    border: 1px solid rgba(56,173,169,0.22);
+  }
+  .layer-card[data-layer="6"] {
+    background: linear-gradient(135deg, rgba(72,219,251,0.35) 60%, rgba(255,255,255,0.7) 100%);
+    border: 1px solid rgba(72,219,251,0.22);
+  }
+  .layer-card[data-layer="5"] {
+    background: linear-gradient(135deg, rgba(255,206,86,0.35) 60%, rgba(255,255,255,0.7) 100%);
+    border: 1px solid rgba(255,206,86,0.22);
+  }
+  .layer-card[data-layer="4"] {
+    background: linear-gradient(135deg, rgba(255,94,87,0.35) 60%, rgba(255,255,255,0.7) 100%);
+    border: 1px solid rgba(255,94,87,0.22);
+  }
+  .layer-card[data-layer="3"] {
+    background: linear-gradient(135deg, rgba(131,149,167,0.35) 60%, rgba(255,255,255,0.7) 100%);
+    border: 1px solid rgba(131,149,167,0.22);
+  }
+  .layer-card[data-layer="2"] {
+    background: linear-gradient(135deg, rgba(76,201,240,0.35) 60%, rgba(255,255,255,0.7) 100%);
+    border: 1px solid rgba(76,201,240,0.22);
+  }
+  .layer-card[data-layer="1"] {
+    background: linear-gradient(135deg, rgba(255,255,255,0.35) 60%, rgba(56,173,169,0.18) 100%);
+    border: 1px solid rgba(56,173,169,0.18);
+  }
+
+.layer-card:hover {
+  transform: translateY(-3px);
+}
+
+.layer-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.layer-card .dropdown {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.3s;
+  background: rgba(255,255,255,0.85);
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 0.7em 1em;
+}
+
+.layer-card.active .dropdown {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* Right Side */
+.network-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.type-card {
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  color: #222;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #0001;
+}
+.type-card:nth-child(1) {
+  background: linear-gradient(135deg, rgba(56,173,169,0.32) 60%, rgba(255,255,255,0.7) 100%);
+  border: 1px solid rgba(56,173,169,0.22);
+}
+.type-card:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255,94,87,0.32) 60%, rgba(255,255,255,0.7) 100%);
+  border: 1px solid rgba(255,94,87,0.22);
+}
+.type-card:nth-child(3) {
+  background: linear-gradient(135deg, rgba(76,201,240,0.32) 60%, rgba(255,255,255,0.7) 100%);
+  border: 1px solid rgba(76,201,240,0.22);
+}
+.type-card:nth-child(4) {
+  background: linear-gradient(135deg, rgba(255,206,86,0.32) 60%, rgba(255,255,255,0.7) 100%);
+  border: 1px solid rgba(255,206,86,0.22);
+}
+.type-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.comparison {
+  margin-top: 2rem;
+}
+
+.compare-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, rgba(72,219,251,0.22) 60%, rgba(255,255,255,0.7) 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px #0001;
+}
+
+.dropdown {
+  /* removed duplicate, see .layer-card .dropdown above */
+}
+
+.layer-card.active .dropdown {
+  /* removed duplicate, see above */
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .osi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background: #0a3d62;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .network-flow {
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+  }
+
+  .connector {
+    width: 4px;             
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  .loading-bar.flow-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    animation: flowY 1.5s infinite linear;
+  }
+
+  @keyframes flowY {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 40px; }
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+    .dropdown-arrow {
+      margin-left: 10px;
+      display: inline-flex;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+    .dropdown-arrow i {
+      transition: transform 0.3s;
+    }
+
+  .home p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .home button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .glass-card {
+    width: 100px;
+    height: 100px;
+    font-size: 0.9rem;
+  }
+
+  .glass-card i {
+    font-size: 30px;
+  }
+}
