@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Network Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="networksim.css">
+
+  
+</head>
+<body>
+
+
+  <nav>
+    <div class="logo">
+      <h2>Networking Fundamental</h2>
+    </div>
+
+    <div class="links" id="nav-links">
+      <a href="osi_tcp_ip.html">OSI & TCP/IP</a>
+      <a href="network_simulator.html">Network Simulator</a>
+      <a href="security.html">Security Showcase</a>
+      <a href="quiz.html">Quiz Section</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </nav>
+
+
+  <div class="home">
+    <h1>Master Networking Fundamental Site</h1>
+    <p>Explore the OSI model, TCP/IP protocols, network security, and practice with our interactive tools. Perfect for beginners and professionals alike.</p>
+    
+    <!-- Buttons -->
+    <div class="hero-buttons">
+      <a href="osi_tcp_ip.html" class="btn primary">Get Started</a>
+      <a href="quiz.html" class="btn secondary">Take Quiz</a>
+    </div>
+
+    <!-- Network Flow Cards -->
+    <div class="network-flow">
+      <div class="glass-card bounce">
+        <i class="fas fa-desktop"></i>
+        <p>Client</p>
+      </div>
+
+      <div class="connector"><div class="loading-bar"></div></div>
+
+      <div class="glass-card bounce">
+        <i class="fas fa-wifi"></i>
+        <p>Router</p>
+      </div>
+
+      <div class="connector"><div class="loading-bar"></div></div>
+
+      <div class="glass-card bounce">
+        <i class="fas fa-server"></i>
+        <p>Server</p>
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+    <h2>Interactive Network Simulator</h2>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div>
+        <h3>End Devices</h3>
+        <div class="device-group">
+          <div class="device" draggable="true" data-type="PC">PC</div>
+          <div class="device" draggable="true" data-type="Server">Server</div>
+        </div>
+      </div>
+      <div>
+        <h3>Network Devices</h3>
+        <div class="device-group">
+          <div class="device" draggable="true" data-type="Router">Router</div>
+          <div class="device" draggable="true" data-type="Switch">Switch</div>
+          <div class="device" draggable="true" data-type="Firewall">Firewall</div>
+          <div class="device" draggable="true" data-type="Hub">Hub</div>
+        </div>
+      </div>
+      <div class="tools">
+        <button class="btn connect">Connect Mode</button>
+        <button class="btn clear" id="clearCanvas">Clear All</button>
+      </div>
+    </div>
+
+    <!-- Canvas -->
+    <div class="canvas-container">
+      <div class="canvas-header">
+        <span>Network Canvas</span>
+        <div class="canvas-actions">
+          <button class="btn" id="saveBtn">Save</button>
+          <button class="btn" id="loadBtn">Load</button>
+        </div>
+      </div>
+      <div class="canvas" id="networkCanvas"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>Networking Hub</h4>
+      <a href="#">OS Model Guide</a>
+    </div>
+    <div>
+      <h4>Learning Resources</h4>
+      <a href="#">Networking Basics</a>
+    </div>
+    <div>
+      <h4>Certifications</h4>
+      <a href="#">CompTIA Network+</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="networksim.js"></script>
+</body>
+</html>

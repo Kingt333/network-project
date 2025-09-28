@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 1rem 2rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  height: 60rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.device-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.device {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  cursor: grab;
+  background: #f4f6fa;
+  border: 1px solid #ddd;
+  user-select: none;
+}
+
+.device:hover {
+  background: #e9f0ff;
+  border-color: #4a90e2;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn.connect {
+  background: #007bff;
+  color: white;
+}
+
+.btn.clear {
+  background: #333;
+  color: white;
+}
+
+/* Network Canvas */
+.canvas-container {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.canvas-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.canvas-actions .btn {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.canvas {
+  flex: 1;
+  background: #fafafa;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.draggable {
+  position: absolute;
+  padding: 8px 12px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: move;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+footer div h4 {
+  margin-bottom: 6px;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: #bbb;
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+footer a:hover {
+  color: white;
+}
