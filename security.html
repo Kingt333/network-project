@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Security Showcase</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="security.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h2>Networking Fundamental</h2>
+    </div>
+    <div class="links" id="nav-links">
+      <a href="index.html">OSI & TCP/IP</a>
+      <a href="networksim.html">Network Simulator</a>
+      <a href="security.html">Security Showcase</a>
+      <a href="quiz.html">Quiz Section</a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </nav>
+
+  <div class="home">
+    <h1>Network Security Showcase</h1>
+    <p>Learn about common network attacks and their countermeasures.</p>
+    
+    <!-- Buttons -->
+    <div class="hero-buttons">
+      <a href="osi_tcp_ip.html" class="btn primary">Get Started</a>
+      <a href="quiz.html" class="btn secondary">Take Quiz</a>
+    </div>
+
+    <!-- Network Flow Cards -->
+    <div class="network-flow">
+      <div class="glass-card bounce">
+        <i class="fas fa-desktop"></i>
+        <p>Client</p>
+      </div>
+
+      <div class="connector"><div class="loading-bar"></div></div>
+
+      <div class="glass-card bounce">
+        <i class="fas fa-wifi"></i>
+        <p>Router</p>
+      </div>
+
+      <div class="connector"><div class="loading-bar"></div></div>
+
+      <div class="glass-card bounce">
+        <i class="fas fa-server"></i>
+        <p>Server</p>
+      </div>
+    </div>
+  </div>
+
+  <header class="security">
+    <h2>Network Security Showcase</h2>
+    <p>Learn about common network attacks and their countermeasures</p>
+  </header>
+
+  <main class="grid-container">
+    <!-- Card 1 -->
+    <div class="card red">
+      <h3>Phishing Attack</h3>
+      <p>Fraudulent attempts to obtain sensitive information by disguising as trustworthy entities.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Fake email from “bank” requesting login credentials.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>Email filtering, two-factor authentication.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card orange">
+      <h3>DoS Attack</h3>
+      <p>Denial of Service attacks overwhelm systems with traffic to make them unavailable.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Flooding server with requests until it crashes.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>Rate limiting, DDoS protection, load balancing.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card purple">
+      <h3>IP Spoofing</h3>
+      <p>Attackers forge IP addresses to impersonate legitimate sources.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Sending packets with fake source IP to bypass filters.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>Ingress filtering, authentication protocols.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card blue">
+      <h3>Man-in-the-Middle</h3>
+      <p>Intercepting communication between two parties without their knowledge.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Intercepting Wi-Fi traffic in public networks.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>HTTPS, VPN, certificate validation.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card yellow">
+      <h3>Malware</h3>
+      <p>Malicious software designed to damage or gain unauthorized access to systems.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Trojan horse, ransomware, keyloggers.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>Antivirus software, regular updates, sandboxing.</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card lightblue">
+      <h3>Wireless Attacks</h3>
+      <p>Exploiting vulnerabilities in wireless networks and devices.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>WEP cracking, evil twin access points.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>WPA3 encryption, network monitoring.</p>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card green">
+      <h3>Firewall Bypass</h3>
+      <p>Techniques used to evade detection and gain unauthorized access through firewalls.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Using encrypted tunnels or port knocking to sneak past firewall rules.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>Implementing strict firewall rules, intrusion detection systems, and regular audits.</p>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card teal">
+      <h3>DNS Spoofing</h3>
+      <p>Corrupting DNS data to redirect traffic to malicious sites.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Redirecting users from a legitimate site to a fake one.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>DNSSEC, secure DNS resolvers.</p>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card pink">
+      <h3>Credential Stuffing</h3>
+      <p>Automated injection of stolen username/password pairs to gain unauthorized access.</p>
+      <div class="content">
+        <h4>Example</h4>
+        <p>Using leaked credentials from one breach to access accounts on other services.</p>
+      </div>
+      <div class="content">
+        <h4>Countermeasure</h4>
+        <p>Multi-factor authentication, monitoring for unusual login attempts.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+   <div class="footer">
+  <div class="head1">
+<h3>Networking Hub</h3>
+<p>Your comprehensive resource for networking concepts, technologies and practical skills.</p>
+  </div>
+
+  <div class="foot2">
+    <h3>Learning Resources</h3>
+    <ul>
+      <li><a href="osi_tcp_ip.html">OSI Model Guide</a></li>
+      <li><a href="network_simulator.html">TCP/IP Protocols</a></li>
+      <li><a href="security.html">Network Security</a></li>
+      <li><a href="quiz.html">Practice Labs</a></li>
+    </ul>
+  </div>
+
+  <div class="foot3">
+    <h3>Certifications</h3>
+    <ul>
+      <li><a href="ccna.html">CCNA</a></li>
+      <li><a href="ccnp.html">CCNP</a></li>
+      <li><a href="compTIA.html">CompTIA Network+</a></li>
+      <li><a href="microsoft.html">Microsoft Certified: Azure Fundamentals</a></li>
+    </ul>
+  </div>
+
+
+
+  <div class="foot4">
+    <h3>Connect</h3>
+    <ul>
+      <li><a href="https://www.facebook.com/NetworkingFundamentals">Facebook</a></li>
+      <li><a href="https://twitter.com/NetFundamentals">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/company/networking-fundamentals">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/networkingfundamentals/">Instagram</a></li>
+    </ul>
+    <p>Join our community of networking enthusiasts!</p>
+  </div>
+  <footer>
+  <hr class="footer-line">
+  <p>© 2025 Networking Project. All rights reserved.</p>
+</footer>
+
+  </div>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

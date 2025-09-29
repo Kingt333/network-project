@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Network Simulator</title>
+  <title>Network Simulator</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="networksim.css">
 
@@ -11,53 +14,40 @@
 </head>
 <body>
 
-
   <nav>
     <div class="logo">
       <h2>Networking Fundamental</h2>
     </div>
-
     <div class="links" id="nav-links">
-      <a href="osi_tcp_ip.html">OSI & TCP/IP</a>
-      <a href="network_simulator.html">Network Simulator</a>
+      <a href="index.html">OSI & TCP/IP</a>
+      <a href="networksim.html">Network Simulator</a>
       <a href="security.html">Security Showcase</a>
       <a href="quiz.html">Quiz Section</a>
     </div>
-
-    <!-- Mobile Menu Button -->
     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
   </nav>
 
-
   <div class="home">
-    <h1>Master Networking Fundamental Site</h1>
-    <p>Explore the OSI model, TCP/IP protocols, network security, and practice with our interactive tools. Perfect for beginners and professionals alike.</p>
-    
-    <!-- Buttons -->
+    <h1>Network Simulator</h1>
+    <p>Drag and drop devices, connect them, and visualize your own network topology. Experiment and learn interactively!</p>
     <div class="hero-buttons">
-      <a href="osi_tcp_ip.html" class="btn primary">Get Started</a>
+      <a href="osi_tcp_ip.html" class="btn primary">OSI Model</a>
       <a href="quiz.html" class="btn secondary">Take Quiz</a>
     </div>
-
-    <!-- Network Flow Cards -->
     <div class="network-flow">
       <div class="glass-card bounce">
         <i class="fas fa-desktop"></i>
-        <p>Client</p>
+        <p>PC</p>
       </div>
-
       <div class="connector"><div class="loading-bar"></div></div>
-
-      <div class="glass-card bounce">
-        <i class="fas fa-wifi"></i>
-        <p>Router</p>
-      </div>
-
-      <div class="connector"><div class="loading-bar"></div></div>
-
       <div class="glass-card bounce">
         <i class="fas fa-server"></i>
         <p>Server</p>
+      </div>
+      <div class="connector"><div class="loading-bar"></div></div>
+      <div class="glass-card bounce">
+        <i class="fas fa-wifi"></i>
+        <p>Router</p>
       </div>
     </div>
   </div>
@@ -106,26 +96,47 @@
   </div>
 
   <!-- Footer -->
-  <footer>
-    <div>
-      <h4>Networking Hub</h4>
-      <a href="#">OS Model Guide</a>
+  
+
+  <div class="footer">
+    <div class="head1">
+      <h3>Networking Hub</h3>
+      <p>Your comprehensive resource for networking concepts, technologies and practical skills.</p>
     </div>
-    <div>
-      <h4>Learning Resources</h4>
-      <a href="#">Networking Basics</a>
+    <div class="foot2">
+      <h3>Learning Resources</h3>
+      <ul>
+        <li><a href="osi_tcp_ip.html">OSI Model Guide</a></li>
+        <li><a href="networksim.html">TCP/IP Protocols</a></li>
+        <li><a href="security.html">Network Security</a></li>
+        <li><a href="quiz.html">Practice Labs</a></li>
+      </ul>
     </div>
-    <div>
-      <h4>Certifications</h4>
-      <a href="#">CompTIA Network+</a>
+    <div class="foot3">
+      <h3>Certifications</h3>
+      <ul>
+        <li><a href="ccna.html">CCNA</a></li>
+        <li><a href="ccnp.html">CCNP</a></li>
+        <li><a href="compTIA.html">CompTIA Network+</a></li>
+        <li><a href="microsoft.html">Microsoft Certified: Azure Fundamentals</a></li>
+      </ul>
     </div>
-    <div>
-      <h4>Connect</h4>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
+    <div class="foot4">
+      <h3>Connect</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/NetworkingFundamentals">Facebook</a></li>
+        <li><a href="https://twitter.com/NetFundamentals">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/company/networking-fundamentals">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/networkingfundamentals/">Instagram</a></li>
+      </ul>
+      <p>Join our community of networking enthusiasts!</p>
     </div>
-  </footer>
+    <footer>
+      <hr class="footer-line">
+      <p>© 2025 Networking Project. All rights reserved.</p>
+    </footer>
+  </div>
+
 
   <script src="networksim.js"></script>
 </body>
