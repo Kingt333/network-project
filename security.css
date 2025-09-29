@@ -1,3 +1,45 @@
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .card {
+    padding: 1rem;
+    font-size: 0.98rem;
+  }
+  .security {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw;
+    overflow-x: hidden !important;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .card {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+  .security {
+    padding: 0.5rem;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p, .content h4 {
+    font-size: 0.9rem;
+  }
+}
 
 
 * {
@@ -71,6 +113,8 @@ nav .links a.active {
   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
   gap: 1.5rem;
   padding: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Card Styles */
@@ -80,6 +124,7 @@ nav .links a.active {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
+  margin: 0 auto;
 }
 
 .card:hover {
