@@ -11,6 +11,7 @@ body {
   background: linear-gradient(to right, #f7f8fc, #f1f5ff);
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Navbar */
